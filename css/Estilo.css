@@ -1,0 +1,95 @@
+/* Propiedades Comunes */
+
+header, main, section, article, footer, aside { display: block; }
+body { margin: 0 !important; }
+a { text-decoration: none; }
+
+h1, h2 { font-family: 'Merienda', cursive;}
+h3, h4, h5, h6, p, a, form, input, textarea, select, option { font-family: 'Alegreya Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+
+/* MAIN */
+main { width: 100%; height: 100%; margin: o auto; float: none; position: relative; }
+
+/* Foto de perfil y nombre con poca infromación */
+
+section#perfil { width: 100%; height: 100%; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 10; }
+
+section#perfil article#foto-de-perfil { width: 55%; height: 100%; margin: 0; float: left; position: relative; background: url('../orianac.jpg'); no-repeat top center; background-size: cover;}
+section#perfil article#foto-de-perfil figure { width: 100%; height: 150px; margin: 0; float: none; display: none; position: absolute; bottom: 0; Left: 0; z-index: 11; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,7f7f7f+23,0f0f0f+99&0+11,0.7+51,0.75+64 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(61,61,61,0) 11%, rgba(127,127,127,0.21) 23%, rgba(86,86,86,0.7) 51%, rgba(67,67,67,0.75) 64%, rgba(15,15,15,0.75) 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(61,61,61,0) 11%,rgba(127,127,127,0.21) 23%,rgba(86,86,86,0.7) 51%,rgba(67,67,67,0.75) 64%,rgba(15,15,15,0.75) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(61,61,61,0) 11%,rgba(127,127,127,0.21) 23%,rgba(86,86,86,0.7) 51%,rgba(67,67,67,0.75) 64%,rgba(15,15,15,0.75) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf0f0f0f',GradientType=0 ); /* IE6-9 */ }   
+    
+section#perfil article#foto-de-perfil figure h1 { text-align: center; color: white; font-size: 2em; font-weight: 100; }
+section#perfil article#foto-de-perfil figure h3 { text-align: center; color: white; font-weight: 400; line-height: 1em; margin: 0 15px; }
+
+
+/* INFORMACIÓN DEL PERFIL */
+
+section#perfil article#info-perfil { width: 45%; height: 100%; margin: 70px 0 0; float: right; position: relative; }
+
+section#perfil article#info-perfil div#box-info-perfil { width: 450px; height: 400px; margin: 10vh 0 0 10vh ; float: none; position: relative; }
+section#perfil article#info-perfil div#box-info-perfil h2 { font-weight: 200; text-align: left; font-size: 2em; color: #9e0303;}
+section#perfil article#info-perfil div#box-info-perfil h3 { text-align: left; font-weight: 500; line-height: 1.5em; padding: 0 0 20px; }
+section#perfil article#info-perfil div#box-info-perfil > a { width: 190px; height: auto; display: block; margin: 0; float: none; position: relative; background: darkred; color: white; border-radius: 3px; text-align: center; ;font-size: 1em; ;line-height: 1.05em; ;font-weight: 400; padding: 10px 0; transition: all 0.3s ease-in; }
+section#perfil article#info-perfil div#box-info-perfil a:hover{ width: 200px; background: #999; color: darkred; transition: all 0.3s ease-in; font-size: 1em; font-weight: 600;}
+section#perfil article#info-perfil div#box-info-perfil p { padding: 20px 0; text-align: justify; line-height: 1.5; font-weight: 500;}
+
+
+/* INFORMACIÓN DE EXPERIENCIA */
+
+section#perfil article#info-perfil div#box-info-perfil div#info-experience { width: 100%; height: 38px; display: block; float: none; margin: 0 0 20px auto; position: relative; }
+section#perfil article#info-perfil div#box-info-perfil div#info-experience div.txt-experience {  width: 100%; height: 38px; display: block; float: none; margin: 0 0 20px; position: relative }
+section#perfil article#info-perfil div#box-info-perfil div#info-experience div.txt-experience h6 { text-align: left; color: #999; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.65em; line-height: 1.5em; font-weight: 500;     padding: 0 0 3px;}
+section#perfil article#info-perfil div#box-info-perfil div#info-experience div.txt-experience h5 { text-align: left; color: rgb(48, 48, 48); font-size: 0.96em; line-height: 1.5em; letter-spacing: 0.06em; font-weight: 600; padding: 0 0 3px;}
+
+/* MENÚ DE REDES */
+
+section#perfil article#info-perfil div#box-info-perfil nav#menú-de-redes { width: 100%; height: 44px; display: block; margin: 0 auto; float: none; position: relative }
+section#perfil article#info-perfil div#box-info-perfil nav#menú-de-redes a { width: 44px; height: 44px; display: block; margin: 0 5px 0 0 ; float: left; position: relative; text-align: center; transition: all 0.3s ease-in; background: darkred; border-radius: 50%; }
+section#perfil article#info-perfil div#box-info-perfil nav#menú-de-redes a i { color: white; padding: 13px 0; font-size: 1.1em; transition: all 0.3s ease-in;}
+section#perfil article#info-perfil div#box-info-perfil nav#menú-de-redes a:hover {color: darkred; background: #999; transition: all 0.3s ease-in;}
+section#perfil article#info-perfil div#box-info-perfil nav#menú-de-redes a:hover i { color: darkred; background: #999; transition: all 0.3s ease-in;}
+
+
+
+
+
+
+
+
+
+/* Media Queries para Responsive Design */
+
+@media only screen and ( max-width: 1199px ) {
+
+main { height: auto; }
+    
+section#perfil { height: auto; margin: o auto; float: none; position: relative; }
+section#perfil article#foto-de-perfil { width: 100%; height: 400px; margin: o auto; float: none;} 
+section#perfil article#foto-de-perfil figure { width: 100%; height: 150px; margin: 0; float: none; display: block; position: absolute;}
+
+
+section#perfil article#info-perfil { width: 100%; height: auto; margin: 0 auto; float: none;}
+
+section#perfil article#info-perfil div#box-info-perfil h2,
+section#perfil article#info-perfil div#box-info-perfil h3 { display: none;}
+section#perfil article#info-perfil div#box-info-perfil > a {  margin: 55px auto 20px; } 
+section#perfil article#info-perfil div#box-info-perfil p {text-align: center;}
+
+section#perfil article#info-perfil div#box-info-perfil { width: 80%; height: auto; margin: 10vh 0 0 10vh ; float: none; position: relative; margin: 0 auto}
+
+section#perfil article#info-perfil div#box-info-perfil div#info-experience div.txt-experience {    margin: 0 auto 20px; width: 250px; height: 38px; padding: 0 12px auto;}
+section#perfil article#info-perfil div#box-info-perfil div#info-experience div.txt-experience h6 { text-align: center;  font-weight: 500; padding: 0 0 3px; margin: 0px;}
+
+section#perfil article#info-perfil div#box-info-perfil nav#menú-de-redes {    margin: 0 115px 55px; width: 158px; height: 44px; display: block; margin: 0 auto 46px; float: none; position: relative; padding: 0 30p  }
+
+@media only screen and ( max-width: 1099px ) { }
+@media only screen and ( max-width: 999px ) { }
+@media only screen and ( max-width: 899px ) { }
+@media only screen and ( max-width: 799px ) { }
+@media only screen and ( max-width: 699px ) { }
+@media only screen and ( max-width: 599px ) { }
